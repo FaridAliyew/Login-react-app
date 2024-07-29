@@ -1,0 +1,49 @@
+.main-container-4 {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;  
+}
+
+.post-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-card img {
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+.post-card .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.post-card .body {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.post-card .icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.post-card .like,
+.post-card .comment,
+.post-card .send,
+.post-card .share {
+    cursor: pointer;
+}

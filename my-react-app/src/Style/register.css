@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.main-container.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.regisContainer {
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+body.dark-mode .regisContainer {
+  background-color: rgb(73, 73, 73);
+}
+
+body.dark-mode .regisContainer .register,
+body.dark-mode .regisContainer .p1 {
+  color: white;
+}
+
+body.dark-mode .regisContainer .submit{
+  background-color: white;
+  color: black;
+}
+
+body {
+  overflow-y: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* --------- Main-container -------- */
+.main-container {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.main-container .regisContainer {
+  box-shadow: 10px 10px 30px -5px;
+}
+
+
+/* --------- img --------- */
+.main-container .registerImg {
+  background-image: url("../Register.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  box-shadow: -10px 10px 30px -5px;
+}
+
+.main-container .submit {
+  padding: 10px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+}
+
+.main-container .register {
+  color: rgb(0, 247, 255);
+  font-weight: 400;
+  font-size: 70px;
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 70px;
+  font-style: italic;
+}
+
+.main-container .p1 {
+  opacity: 0.5;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+/* --------- Form ------ */
+form {
+  margin-top: 80px;
+  display: grid;
+  justify-content: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-container input {
+  padding-left: 30px;
+  font-size: 22px;
+  margin-bottom: -10px;
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+/* --------- Button -------- */
+.main-container .submit {
+  position: relative;
+  left: 150px;
+  top: 50px;
+  font-size: 20px;
+  width: 200px;
+  color: aliceblue;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.error {
+  position: relative;
+  top: 10px;
+  border: solid 2px red;
+  padding: 5px;
+  border-radius: 10px;
+  width: 60%;
+  color: red;
+  font-style: italic;
+  margin-top: -10px;
+  margin: -10px 0 20px 0;
+}
+
+/* --------- Responsvie -------- */
+
+@media (min-width:250px) {
+  .registerImg {
+    display: none;
+  }
+
+  .regisContainer {
+    height: 90vh;
+  }
+
+  .main-container {
+    grid-template-columns: 500px;
+  }
+
+  .main-container .register {
+    font-size: 35px;
+  }
+
+  .main-container .submit {
+    position: relative;
+    left: 75px;
+    top: 50px;
+    font-size: 20px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .registerImg {
+    display: block;
+  }
+
+  .regisContainer {
+    height: 96vh;
+  }
+
+  .main-container {
+    grid-template-columns: 500px 500px;
+  }
+
+  .main-container .register {
+    font-size: 70px;
+  }
+
+  .main-container .submit {
+    position: relative;
+    left: 150px;
+    top: 50px;
+    font-size: 20px;
+    width: 200px;
+  }
+}
